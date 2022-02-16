@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h2>Income</h2>
+        <label for="Income">Income</label>
+        <input id="income" type="text" placeholder="Income">
+        <h2>Expense</h2>
+        <label for="Food">Food</label>
+        <input id="food-expense" type="text" placeholder="Your expense"><br><br>
+        <label for="Room">Room</label>
+        <input id="room-expense"  type="text" placeholder="Your expense"><br><br>
+        <label for="Travel">Travel</label>
+        <input id="travel-expense" type="text" placeholder="Your expense"><br><br>
+        <button id="total-amount" >Total Expense</button>
+        <div class="cart-item">
+            <div class="row">
+
+               <div class="col-md-8">
+                  <h5>Subtotal: </h5>
+                  <h5>Balance:</h5>
+               </div>
+
+               <div class="col-md-4 status">
+                  <h5>$<span id="sub-total">0</span></h5>
+                  <h5>$<span id="Total-balance">0</span></h5>
+               </div>
+            </div>
+         </div>
+    </section>
+
+    <script src="form.js"></script>
+</body>
+</html>
