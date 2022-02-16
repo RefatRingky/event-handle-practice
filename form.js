@@ -10,4 +10,25 @@ document.getElementById("total-amount").addEventListener('click',function () {
 
     document.getElementById('Total-balance').innerText = restBalance ;
 
-})
+    // for saving Amount
+    document.getElementById("save-btn").addEventListener('click',function () {
+    
+        document.getElementById("saving-input");
+        const save = mainIncome.value * .2;
+        const remainigBalance = parseInt(restBalance) - parseInt(save)
+        document.getElementById('saving-total').innerText = save;
+        document.getElementById('Remaining-balance').innerText = remainigBalance;
+    
+    });
+    
+});
+
+
+    
+
+
+    
+      
+  
+
+
