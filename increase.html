@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" value="0" id="inc">
+    <button onclick="buttonClick()" id="checkout-btn">Increase</button>
+    <script>
+        var counter = 0;
+        var i = 0;
+       
+        function buttonClick() {
+            if (i >=5) {
+              return;  
+            }
+            document.getElementById("inc").value = ++i; 
+
+             if (counter == 5) {
+                document.getElementById('checkout-btn').setAttribute("disabled",true)
+            }
+        }
+       
+    </script>
+</body>
+</html>

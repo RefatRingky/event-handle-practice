@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Button</title>
+</head>
+<body>
+    
+    <section>
+        <h1 id="remove-tag">I want to remove you</h1>
+        <button id="delete-btn" onclick="limit()">Delete</button>
+    </section><br>
+
+    <section>
+        <input id="value-number" type="number" min="0" class="form-control text-center" value="0" >
+        <button id="value-btn">Value</button>
+    </section>
+    <script>
+        document.getElementById('delete-btn').addEventListener('click',function () {
+            document.getElementById('remove-tag').style.display = 'none';
+        })
+
+        document.getElementById("value-btn").addEventListener('click',function () {
+        const caseInput = document.getElementById("value-number");
+        const caseNumber = caseInput.value;
+        caseInput.value = parseFloat(caseNumber)+ 1;
+        
+});
+
+    
+    </script>
+</body>
+</html>
